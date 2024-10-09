@@ -1,0 +1,129 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#myBtn{
+    max-width: 150px;
+    border-radius: 100px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.4);
+    transition: all 0.15s ease;
+    border: none;
+    font-weight: 900;
+}
+
+.myBtns{
+    max-width: 150px;
+    border-radius: 100px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.4);
+    transition: all 0.15s ease;
+    border: none;
+    font-weight: 900;
+    margin: 10px;
+}
+
+#myBtn:active{
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.myBtns:active{
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+#label1, #label2, #label3{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+#myText{
+    margin: 20px;
+}
+
+.wrapper{
+    display: flex;
+    gap: 10px;
+    margin: 30px ;
+}
+
+.r, .g, .b{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.r{
+    color: #f00;
+    accent-color: #f00;
+}
+
+.g{
+    color: #0f0;
+    accent-color: #0f0;
+}
+
+.b{
+  color: #00f;
+  accent-color: #00f;
+}
+
+
+#mySubmit{
+    font-size: 1em;
+}
+
+.box{
+    border: 3px solid;
+    width: 100%;
+    height: 125px;
+    margin-top: 20px;
+}
+
+#myBox{
+    background-color: lightgreen;
+    width: 300px;
+    height: 300px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#myBox2{
+    background-color: rgb(254, 210, 62);
+    width: 350px;
+    height: 200px;
+    font-size: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.enabled{
+    background-color: rgb(103, 103, 217);
+    color: #fff;
+}
+
+.hover{
+    background-color: rgb(90, 210, 90);
+}
+
+.disabled{
+    background-color: rgb(250, 88, 88);
+}
+
+#myH1{
+    font-size: 5rem;
+}

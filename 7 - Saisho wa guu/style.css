@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family:"Bebas Neue", sans-serif;
+    background-color: rgb(29, 19, 36);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.name{
+    font-size: 25px;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.choices button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    font-size: 80px;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    background-color: #746879;
+}
+
+.choices button::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+}
+
+.choices button::before{
+    content: "";
+    background: linear-gradient(
+        45deg, #ff4a4a,#ffca2a, #f72e77       
+    );
+    position: absolute;
+    border-radius: 50px;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0%{background-position: 0 0;}
+    50%{background-position: 400%, 0;}
+    100%{background-position: 0 0;}    
+}
+
+button:hover::before{
+    opacity: 1;
+}
+
+button:active:after{
+    background: transparent;
+    transition: all .1s ease-in-out;
+}
+
+.choices{
+    display: flex;
+    gap: 50px;
+}
+
+.gameInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+    font-size: 40px;
+    color: #000000;
+    padding: 4px;
+    width: 50vw;
+    text-align: center;
+    border-radius: 500px;
+    position: relative;
+    background: linear-gradient(
+        45deg, #ff4a4a,#ffca2a, #f72e77,#f72ef0       
+    );
+    height: 15vw;
+}
+
+.gameInfo::before{
+    content: "";
+    background: linear-gradient(
+        45deg, #ff4a4a,#ffca2a, #f72e77       
+    );
+    position: absolute;
+    border-radius: 500px;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    animation: glowing 20s linear infinite;
+}
+
+#resultDisplay{
+    color: #fff;
+}
+
+h1{
+    font-size: 90px;
+}
+
+.bot {
+    position: fixed;
+    right: 30vw;
+}
+
+.player {
+    position: fixed;
+    left: 30vw;
+}

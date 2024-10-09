@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(#0c9a91,#0f1f42)  ;
+}
+
+::placeholder{
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+}
+
+input[type="text"]{
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.ai{
+    align-items: center;
+}
+
+.jc{
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.content{
+    background: linear-gradient(#006469 40%,#44bab1);
+    border-radius: 20px;
+}
+
+.weatherForm input{
+    border-radius: 20px 0px 0px 0px;
+    padding: 10px;
+    border: solid 1px #ffffff;
+    background: transparent;
+    border-width: 1px 0px 0px 1px;
+    width: 100%;
+}
+
+.weatherForm button{
+    border-radius: 0px 20px 0px 0px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    margin: 0;
+    border: solid 1px #fff;
+    border-width: 1px 1px 0px 0px;
+    background: transparent;
+}
+
+.card{
+    color: #fff;
+    padding: 40px;
+    border-radius: 0px 0px 20px 20px;
+    border: solid 1px #fff;
+    border-width: 0px 1px 1px 1px;
+    box-shadow: 40px 40px 50px 1px rgba(0, 0, 0, 0.4);
+}
+
+.cityDisplay{
+    margin: 0;
+}
+
+.tempDisplay{
+    margin: 0;
+    font-weight: 600;
+}
+
+.weatherImg{
+    font-size: 10vw;
+    margin: 0;
+}
+
+.descDisplay{
+    margin: 0 0 20px 0 ;
+}
+
+.errorDisplay{
+    background: #ee2342;
+    padding: 10px;
+    border-radius: 50px;
+}
+

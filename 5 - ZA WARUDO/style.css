@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+body{
+    font-family: "Secular One", sans-serif;    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(/media/jjbaBg.jpg);
+    backdrop-filter: blur(4px);
+}
+
+.container{
+    width: 40vw;
+    border: ;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Ken Po | Just for FUN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">
+        <div class="choices">
+            <button class="rock" onclick="playGame('rock')"> <span class="name">Rock</span>✊</button>
+            <button class="paper" onclick="playGame('paper')"><span class="name">Paper</span>🖐</button>
+            <button class="scissors" onclick="playGame('scissors')"><span class="name">Scissors</span>✌</button>
+        </div>
+        <div class="gameInfo">
+            <div class="player">
+                <div>🎮<br>Player</div>
+                <div id="playerDisplay">✊</div>
+            </div>
+            <div id="resultDisplay"></div>
+            <div class="bot">
+                🤖<br>Computer
+                <div id="computerDisplay">✊</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

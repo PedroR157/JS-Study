@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damn is hot | Just for FUN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="content">
+      <form class="weatherForm d-flex">
+        <input type="text" class="cityInput" placeholder="Enter a City">
+        <button type="submit"><i class='bx bx-search'></i></button>
+      </form>
+
+      <div class="card d-flex flex-column">
+        <h1 class="cityDisplay txt-center">Miami</h1>
+        <div class="weatherInfo d-flex jc ai" style="gap: 15px;">
+            <p class="tempDisplay">32°C</p>
+            <span>|</span>
+            <p class="humidityDisplay">Humidity: 75%</p>
+        </div>
+        <div class="weatherSummary d-flex flex-column txt-center">        
+            <p class="weatherImg">⛅</p>
+            <p class="descDisplay">Cloudy</p>
+        </div>
+        <p class="errorDisplay txt-center d-flex jc ai" style="font-weight: 600; display: none;"> </p>
+      </div>
+    </div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

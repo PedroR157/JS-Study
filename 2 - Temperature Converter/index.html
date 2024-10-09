@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Thermal Conversor | Just for FUN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="" class="wrapper">
+        <h1>Temperature Conversion</h1>
+        <input type="number" id="textBox" value="0">
+
+        <div class="CtoF">
+            <input type="radio" name="unit" id="toF">
+            <label for="toF">Celsius ➡ Fahrenheit</label>
+        </div>
+
+        <div class="FtoC">
+            <input type="radio" name="unit" id="toC">
+            <label for="toC">Fahrenheit ➡ Celsius</label>
+        </div>
+
+        <button type="button" onclick="convert()">SUBMIT</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
